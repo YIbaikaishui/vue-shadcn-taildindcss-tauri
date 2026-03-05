@@ -1,0 +1,65 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "vue-tauri-starter",
+  "version": "0.0.1",
+  "identifier": "com.company.app-name",
+  "build": {
+    "frontendDist": "../app",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "pnpm vite:dev",
+    "beforeBuildCommand": "pnpm vite:build",
+    "removeUnusedCommands": true
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "vue-tauri-starter",
+        "center": true,
+        "minWidth": 1280,
+        "minHeight": 720,
+        "resizable": true,
+        "decorations": false,
+        "url": "/"
+      },
+      {
+        "label": "about",
+        "center": true,
+        "width": 400,
+        "height": 320,
+        "resizable": false,
+        "decorations": false,
+        "visible": false,
+        "url": "/about"
+      },
+      {
+        "label": "docs",
+        "center": true,
+        "minWidth": 1280,
+        "minHeight": 720,
+        "resizable": true,
+        "decorations": true,
+        "title": "Docs",
+        "visible": false,
+        "url": "docs/index.html"
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/icon.png",
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "publisher": "Company Name",
+    "resources": ["icons/icon.png"]
+  }
+}

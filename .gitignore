@@ -1,0 +1,32 @@
+# T A U R I
+/src-tauri/target/
+/src-tauri/gen/schemas
+
+src-tauri/icons
+src-tauri/icons/*/**
+
+# V U E
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+node_modules
+app-ssr
+*.local
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+!src/**/*
+
+# D O C S
+docs/.vitepress/cache
+
+# B U I L D
+app/*/**
