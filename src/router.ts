@@ -1,21 +1,8 @@
 import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 
-const DefaultView = () => import('@layouts/DefaultView.vue')
-
-const Home = () => import('@pages/Home.vue')
-const About = () => import('@pages/About.vue')
-
 const routes: RouteRecordRaw[] = [
-  { path: '/', redirect: '/home' },
-
-  { path: '/about', component: About, meta: { title: 'About' } },
-  {
-    path: '/',
-    component: DefaultView,
-    children: [{ path: 'home', component: Home, meta: { title: 'Home' } }],
-  },
-
-  { path: '/:pathMatch(.*)*', redirect: '/home' },
+  // 在这里添加路由
+  // { path: '/', component: () => import('@pages/YourPage.vue') },
 ]
 
 const router = createRouter({

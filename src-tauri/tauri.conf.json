@@ -21,27 +21,6 @@
         "resizable": true,
         "decorations": false,
         "url": "/"
-      },
-      {
-        "label": "about",
-        "center": true,
-        "width": 400,
-        "height": 320,
-        "resizable": false,
-        "decorations": false,
-        "visible": false,
-        "url": "/about"
-      },
-      {
-        "label": "docs",
-        "center": true,
-        "minWidth": 1280,
-        "minHeight": 720,
-        "resizable": true,
-        "decorations": true,
-        "title": "Docs",
-        "visible": false,
-        "url": "docs/index.html"
       }
     ],
     "security": {
